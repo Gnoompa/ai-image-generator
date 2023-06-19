@@ -8,12 +8,9 @@ export async function GET(request:Request) {
     console.log(textData)
     return new Response(JSON.stringify(textData.trim()), {
         status:200,
+        headers: {
+            'x-content-type-options': 'nosniff'
+        }
     });
-
-
-
-//     const textdata = 'Hello Word!'
-//     console.log(textdata)
-//    return new Response(textdata)
    
 }
