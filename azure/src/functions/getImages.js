@@ -4,7 +4,7 @@ const {
     StorageSharedKeyCredential,
   }   = require("@azure/storage-blob");
 
-  const generateSASToken = require("../../lib/generateSASToken");
+const generateSASToken = require("../../lib/generateSASToken");
 
 const AccountName = process.env.AccountName;
 const AccountKey = process.env.AccountKey;

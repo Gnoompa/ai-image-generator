@@ -98,7 +98,7 @@ function PromptInput() {
 
             <button 
                 className="p-4 bg-white text-green-500 border-none transition-colors duration-200 rounded-b-md md:rounded-r-md md:rounded-bl-none font-bold"
-                onClick={mutate}
+                onClick={() => mutate()}
                 type="button"
                 
             >
