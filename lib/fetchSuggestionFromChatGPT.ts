@@ -1,4 +1,4 @@
-const fetchSuggestionFromChatGPT = (key) =>
+const fetchSuggestionFromChatGPT = (key: string) =>
     fetch(key, {
         cache: 'no-store'
     }).then(res => res.json());
