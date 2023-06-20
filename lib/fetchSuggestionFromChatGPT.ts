@@ -1,5 +1,5 @@
-const fetchSuggestionFromChatGPT = () => 
-    fetch("/api/suggestion", {
+const fetchSuggestionFromChatGPT = (key) =>
+    fetch(key, {
         cache: 'no-store'
     }).then(res => res.json());
 
